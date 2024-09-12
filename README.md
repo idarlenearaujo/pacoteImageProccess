@@ -11,7 +11,7 @@ Este pacote oferece uma série de filtros de imagem que permitem melhorar a qual
 -   **improve_lighting**: Ajusta a luminosidade da imagem utilizando o método CLAHE (Contrast Limited Adaptive Histogram Equalization), que melhora os detalhes em áreas escuras sem saturar as áreas claras.
 
 ```python
-from image_processing.processing.enhance import improve_lighting
+from image_processing.processing import improve_lighting
 
 improve_lighting('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -19,7 +19,7 @@ improve_lighting('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 -   **improve_contrast**: Aumenta o contraste da imagem de forma natural, ajustando os valores de brilho e contraste para realçar os detalhes.
 
 ```python
-from image_processing.processing.enhance import improve_contrast
+from image_processing.processing import improve_contrast
 
 improve_contrast('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -28,7 +28,7 @@ improve_contrast('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 
 
 ```python
-from image_processing.processing.enhance import improve_saturation
+from image_processing.processing import improve_saturation
 
 improve_saturation('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -37,7 +37,7 @@ improve_saturation('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg
 
 
 ```python
-from image_processing.processing.enhance import reduce_noise
+from image_processing.processing import reduce_noise
 
 reduce_noise('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -46,7 +46,7 @@ reduce_noise('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 
 
 ```python
-from image_processing.processing.enhance import sharpen_image
+from image_processing.processing import sharpen_image
 
 sharpen_image('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -55,7 +55,7 @@ sharpen_image('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 
 
 ```python
-from image_processing.processing.enhance import correct_color
+from image_processing.processing import correct_color
 
 correct_color('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 ```
@@ -65,7 +65,7 @@ correct_color('caminho/para/imagem.jpg', 'caminho/para/imagem_melhorada.jpg')
 -   **load_image**: É feito o carregamento da imagem para um caminho especificado.
 
 ```python
-from image_processing.utils.io import load_image
+from image_processing.utils import load_image
 
 image = load_image('caminho/para/imagem.jpg')
 ```
@@ -73,7 +73,7 @@ image = load_image('caminho/para/imagem.jpg')
 -   **save_image**: Onde é salvo a nova imagem em um caminho especificado.
 
 ```python
-from image_processing.utils.io import save_image
+from image_processing.utils import save_image
 
 save_image(image, 'caminho/para/imagem_salva.jpg')
 
@@ -127,13 +127,13 @@ pip install image_processing
 ## Uso
 
 ```python
-from image_processing.processing.enhance import improve_lighting, improve_contrast, improve_saturation, reduce_noise, sharpen_image, correct_color
+from image_processing.processing import improve_lighting, improve_contrast, improve_saturation, reduce_noise, sharpen_image, correct_color
 ```
 
 ou
 
 ```python
-import image_processing.processing.enhance
+import image_processing.processing
 ```
 
 ## Contribuição
