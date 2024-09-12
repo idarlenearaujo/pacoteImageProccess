@@ -1,4 +1,4 @@
-from image_processing.utils import load_image, save_image
+from image_processing.utils.io import load_image, save_image
 import unittest
 import os
 import numpy as np
