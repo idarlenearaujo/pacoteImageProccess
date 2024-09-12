@@ -106,8 +106,8 @@ image_processing/
 
 As dependências estão listadas no arquivo `requirements.txt` e incluem:
 
--`opencv-python`
--`numpy`
+-   `opencv-python`
+-   `numpy`
 
 Para instalar as dependências, execute:
 
