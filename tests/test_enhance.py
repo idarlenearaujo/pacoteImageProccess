@@ -1,6 +1,6 @@
-from image_processing.utils.io import load_image
+from image_processing.utils import load_image
 import unittest
-import image_processing.processing.enhance as img
+import image_processing.processing as img
 import os
 
 
